@@ -25,6 +25,10 @@ module.exports = {
                 'asyncArrow': 'never'
             }
         ],
+        'padding-line-between-statements': [
+            'error',
+            { 'blankLine': 'always', 'prev': 'function', 'next': 'function' }
+        ],
 		'no-unused-vars': ['error', { 'vars': 'local', 'args': 'after-used', 'ignoreRestSiblings': false }],
 		'indent': [
 			'error',
