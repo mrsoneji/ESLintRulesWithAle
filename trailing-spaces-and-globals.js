@@ -53,13 +53,13 @@ var NotificationModule = (function () {
             testingKeySpaces = null;
 
             return {
-                id: weekday,
-                text: 'Please, remember to complete your workout today.',
-                title: 'ThrowSmart',
+                id:      weekday,
+                text:    'Please, remember to complete your workout today.',
+                title:   'ThrowSmart',
                 trigger: {
                     every: {
-                        hour :        10,
-                        weekday :            weekday,
+                        hour:    10,
+                        weekday: weekday,
                     }
                 },
                 foreground: true,
