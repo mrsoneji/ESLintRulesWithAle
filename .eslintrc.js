@@ -30,6 +30,15 @@ module.exports = {
             { 'blankLine': 'always', 'prev': 'function', 'next': 'function' },
             { 'blankLine': 'always', 'prev': '*', 'next': 'return' }
         ],
+        'comma-dangle': [
+            'error', {
+                'arrays':    'never',
+                'objects':   'never',
+                'imports':   'never',
+                'exports':   'never',
+                'functions': 'ignore'
+            }
+        ],
 		'no-unused-vars': ['error', { 'vars': 'local', 'args': 'after-used', 'ignoreRestSiblings': false }],
 		'indent': [
 			'error',
