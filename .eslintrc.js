@@ -8,13 +8,12 @@ module.exports = {
 	'globals': {
 		'Atomics': 'readonly',
 		'SharedArrayBuffer': 'readonly',
-        'NotificationModule': 'off'
+        'cordova': 'writable'
 	},
 	'parserOptions': {
 		'ecmaVersion': 5
 	},
 	'rules': {
-		'no-undef': 'off',
 		'no-console': 'off',
         'no-trailing-spaces': ['error'],
         'camelcase': ['error', {'properties': 'never'}],
