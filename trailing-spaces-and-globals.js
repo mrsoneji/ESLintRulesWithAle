@@ -11,7 +11,7 @@ var NotificationModule = (function() {
         var platform = cordova.platformId.toLowerCase();
 
         debugMsg('Platform detected => ', platform);
-        
+
         switch (platform) {
             case 'browser':
                 browserGetRequestPermission();
@@ -65,12 +65,12 @@ var NotificationModule = (function() {
     }
 
     function getScheduleOption() {
-        var workout_schedule_mode = app.data.account_config_data.workout_schedule_mode;
-        var workout_schedule_option = workout_schedule_mode === 'in-season'
+        var workoutScheduleMode = app.data.account_config_data.workout_schedule_mode;
+        var workoutScheduleOption = workoutScheduleMode === 'in-season'
             ? app.data.account_config_data.workout_schedule_option
             : 'mon-wed-fri';
 
-        return workout_schedule_option;
+        return workoutScheduleOption;
     }
 
     function mobileGetRequestPermission() {
