@@ -18,6 +18,13 @@ module.exports = {
 		'no-console': 'off',
         'no-trailing-spaces': ['error'],
         'camelcase': ['error', {'properties': 'never'}],
+        'space-before-function-paren': [
+            'error', {
+                'anonymous':  'never',
+                'named':      'never',
+                'asyncArrow': 'never'
+            }
+        ],
 		'no-unused-vars': ['error', { 'vars': 'local', 'args': 'after-used', 'ignoreRestSiblings': false }],
 		'indent': [
 			'error',
