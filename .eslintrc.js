@@ -8,7 +8,8 @@ module.exports = {
 	'globals': {
 		'Atomics': 'readonly',
 		'SharedArrayBuffer': 'readonly',
-		'NotificationModule': 'off'
+        'NotificationModule': 'off',
+        'cordova': 'readonly'
 	},
 	'parserOptions': {
 		'ecmaVersion': 5
@@ -16,7 +17,8 @@ module.exports = {
 	'rules': {
 		'no-undef': 'off',
 		'no-console': 'off',
-		'no-trailing-spaces': ['error'],
+        'no-trailing-spaces': ['error'],
+        'camelcase': ['error', {'properties': 'never'}],
 		'no-unused-vars': ['error', { 'vars': 'local', 'args': 'after-used', 'ignoreRestSiblings': false }],
 		'indent': [
 			'error',
