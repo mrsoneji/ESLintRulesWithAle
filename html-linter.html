@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title></title>
+    <link rel="stylesheet" href="style/framework7.ios.min.css">
+    <link rel="stylesheet" href="style/framework7.ios.colors.min.css">
+    <link rel="stylesheet" href="style/fontawesome-all.min.css">
+    <link rel="stylesheet" href="style/app.css">
+</head>
+<body class="theme-white">
+    <div id="deviceOffline">
+        <i class="fa fa-wifi-slash"></i>
+        No Internet connection
+    </div>
+<!-- VERSION NOT ALLOWED -->
+<div class="popup version-not-allowed-popup">
+    <div class="layout-master">
+        <div class="screen-title rejection-title">App Update</div>
+        <div class="single-screen">
+            <div class="content-piece">
+                <div class="content-item rejection-message"></div>
+                <div class="content-block-title">Contact Support</div>
+                <div class="list-block">
+                    <ul>
+                        <li>
+                            <a href="mailto:support@throwsmart.com?subject=Support%20Request" class="item-link item-content external">
+                                <div class="item-media"><i class="far fa-fw fa-envelope" aria-hidden="true"></i></div>
+                                <div class="item-inner">
+                                    <div class="item-title">support@throwsmart.com</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:+18665485077" class="item-link item-content external">
+                                <div class="item-media"><i class="fas fa-fw fa-phone fa-flip-horizontal" aria-hidden="true"></i></div>
+                                <div class="item-inner">
+                                    <div class="item-title">1-866-548-5077</div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- CONNECTION REQUIRED -->
+<div class="popup connection-required-popup">
+    <div class="layout-master">
+        <div class="screen-title">Connection Required</div>
+        <div class="single-screen">
+            <div class="content-piece">
+                <div class="content-item">
+                    <p>An internet connection is required in order to continue. Please connect to the internet and try again.</p>
+                    <div class="button-container"><a href="#" class="ui-button try-again"><i class="fas fa-sync" aria-hidden="true"></i> Try Again</a></div>
+                </div>
+                <div class="content-block-title">Contact Support</div>
+                <div class="list-block">
+                    <ul>
+                        <li>
+                            <a href="mailto:support@throwsmart.com?subject=Support%20Request" class="item-link item-content external">
+                                <div class="item-media"><i class="far fa-fw fa-envelope" aria-hidden="true"></i></div>
+                                <div class="item-inner">
+                                    <div class="item-title">support@throwsmart.com</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:+18665485077" class="item-link item-content external">
+                                <div class="item-media"><i class="fas fa-fw fa-phone fa-flip-horizontal" aria-hidden="true"></i></div>
+                                <div class="item-inner">
+                                    <div class="item-title">1-866-548-5077</div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- FORGOT PASSWORD -->
+<div class="popup forgot-password-popup theme-base">
+    <div class="layout-master">
+        <div class="popup-header"><a href="#" class="close-popup open-login-screen"><i class="fas fa-times-circle"></i></a></div>
+        <div class="screen-title">Reset Password</div>
+        <div class="single-screen">
+            <div class="content-piece">
+                <div class="content-item">
+                    <p>To reset your password, enter your email address and date of birth below. A new temporary password will then be emailed to you, which you can update after you log in with it.</p>
+                </div>
+                <div class="list-block">
+                    <form id="passwordReset" method="post">
+                        <ul>
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-inner">
+                                        <div class="item-title label">Email</div>
+                                        <div class="item-input">
+                                            <input type="email" name="email" placeholder="Email">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-inner">
+                                        <div class="item-title label">Date of Birth</div>
+                                        <div class="item-input">
+                                            <input type="date" placeholder="Date of Birth" name="date_of_birth">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+                <button type="submit" class="ui-button">RESET MY PASSWORD</button>
+                <div class="content-block-title">Contact Support</div>
+                <div class="list-block">
+                    <ul>
+                        <li>
+                            <a href="mailto:support@throwsmart.com?subject=Support%20Request" class="item-link item-content external">
+                                <div class="item-media"><i class="far fa-fw fa-envelope" aria-hidden="true"></i></div>
+                                <div class="item-inner">
+                                    <div class="item-title">support@throwsmart.com</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:+18665485077" class="item-link item-content external">
+                                <div class="item-media"><i class="fas fa-fw fa-phone fa-flip-horizontal" aria-hidden="true"></i></div>
+                                <div class="item-inner">
+                                    <div class="item-title">1-866-548-5077</div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- LOGIN SCREEN -->
+<div class="login-screen theme-base">
+    <div class="layout-master">
+        <div class="login-header"></div>
+        <div class="single-screen">
+            <div class="content-piece">
+                <div class="list-block">
+                    <form id="signIn" method="post">
+                        <ul>
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-inner">
+                                        <div class="item-input">
+                                            <input type="email" name="email" placeholder="Email">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-inner">
+                                        <div class="item-input">
+                                            <input type="password" name="password" placeholder="Password">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-inner">
+                                        <div class="item-input">
+                                            <button type="submit" class="ui-button">SIGN IN</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="forgot-password-link"><a href="#" id="forgotPasswordLink">Forgot password?</a></li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+            <div class="content-piece contact-support">
+                <div class="content-block-title">Contact Support</div>
+                <div class="list-block">
+                    <ul>
+                        <li>
+                            <a href="mailto:support@throwsmart.com?subject=Support%20Request" class="item-link item-content external">
+                                <div class="item-media"><i class="far fa-fw fa-envelope" aria-hidden="true"></i></div>
+                                <div class="item-inner">
+                                    <div class="item-title">support@throwsmart.com</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:+18665485077" class="item-link item-content external">
+                                <div class="item-media"><i class="fas fa-fw fa-phone fa-flip-horizontal" aria-hidden="true"></i></div>
+                                <div class="item-inner">
+                                    <div class="item-title">1-866-548-5077</div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content-piece app-version">
+                <div class="content-item"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- OVERLAYS -->
+<div class="statusbar-overlay"></div>
+<div class="panel-overlay"></div>
+<!-- MENU -->
+<div class="panel panel-right panel-cover">
+    <div class="content-block-title">Menu</div>
+    <div class="list-block">
+        <ul>
+            <li>
+                <a href="#" class="list-button item-link close-panel" id="menuLinkHome">
+                    <div class="item-content">
+                        <div class="item-media"><i class="fas fa-fw fa-home" aria-hidden="true"></i></div>
+                        <div class="item-inner">
+                            <div class="item-title">Home</div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="list-button item-link close-panel" id="menuLinkSignout">
+                    <div class="item-content">
+                        <div class="item-media"><i class="fas fa-fw fa-sign-out-alt" aria-hidden="true"></i></div>
+                        <div class="item-inner">
+                            <div class="item-title">Sign Out</div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="list-block">
+        <ul>
+            <li>
+                <a href="support.html" class="list-button item-link close-panel no-animation">
+                    <div class="item-content">
+                        <div class="item-media"><i class="far fa-fw fa-life-ring" aria-hidden="true"></i></div>
+                        <div class="item-inner">
+                            <div class="item-title">Support</div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- MAIN VIEW -->
+<div class="views">
+    <div class="view view-main">
+        <div class="pages">
+            <div class="page" data-page="start"></div>
+        </div>
+    </div>
+</div>
+<!-- Libraries -->
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="scripts/libraries/underscore-min.js"></script>
+<script type="text/javascript" src="scripts/libraries/moment.min.js"></script>
+<script type="text/javascript" src="scripts/libraries/moment-timezone-with-data-2012-2022.min.js"></script>
+<script type="text/javascript" src="scripts/libraries/framework7.min.js"></script>
+<script type="text/javascript" src="scripts/libraries/cookies.js"></script>
+<script type="text/javascript" src="scripts/libraries/localforage.min.js"></script>
+<!---BELOW ARE REMOVED ON BUILD, MUST BE INCLUDED IN GULP CONCAT--->
+<!-- Custom Libraries -->
+<script type="text/javascript" src="scripts/libraries/utilities.js"></script>
+<!-- Data -->
+<script type="text/javascript" src="scripts/data/base.js"></script>
+<script type="text/javascript" src="scripts/data/programs.js"></script>
+<script type="text/javascript" src="scripts/data/program-units/activity-future-planned-day.js"></script>
+<script type="text/javascript" src="scripts/data/program-units/activity-future-planned-days.js"></script>
+<script type="text/javascript" src="scripts/data/program-units/activity-previous-days.js"></script>
+<script type="text/javascript" src="scripts/data/program-units/activity-previous-quick.js"></script>
+<script type="text/javascript" src="scripts/data/program-units/activity-previous-detailed.js"></script>
+<script type="text/javascript" src="scripts/data/program-units/activity-tracker.js"></script>
+<script type="text/javascript" src="scripts/data/program-units/arm-care.js"></script>
+<script type="text/javascript" src="scripts/data/program-units/arm-feels-check.js"></script>
+<script type="text/javascript" src="scripts/data/program-units/arm-feels-review.js"></script>
+<script type="text/javascript" src="scripts/data/program-units/current-and-recent-activity-check.js"></script>
+<script type="text/javascript" src="scripts/data/program-units/dynamic-warm-up.js"></script>
+<script type="text/javascript" src="scripts/data/program-units/evaluation-ready-screens.js"></script>
+<script type="text/javascript" src="scripts/data/program-units/evaluation-health-check.js"></script>
+<script type="text/javascript" src="scripts/data/program-units/exit-velocity.js"></script>
+<script type="text/javascript" src="scripts/data/program-units/evaluation-questionnaire.js"></script>
+<script type="text/javascript" src="scripts/data/program-units/fist-to-fist.js"></script>
+<script type="text/javascript" src="scripts/data/program-units/in-season-workout-ready-screens.js"></script>
+<script type="text/javascript" src="scripts/data/program-units/off-season-strength-workout-ready.js"></script>
+<script type="text/javascript" src="scripts/data/program-units/off-season-velocity-workout-ready.js"></script>
+<script type="text/javascript" src="scripts/data/program-units/recovery-arm-care.js"></script>
+<script type="text/javascript" src="scripts/data/program-units/recovery-jogging.js"></script>
+<script type="text/javascript" src="scripts/data/program-units/schedule-mode-question.js"></script>
+<script type="text/javascript" src="scripts/data/program-units/strength-evaluation.js"></script>
+<script type="text/javascript" src="scripts/data/program-units/throw-until-loose.js"></script>
+<script type="text/javascript" src="scripts/data/program-units/velocity-evaluation.js"></script>
+<script type="text/javascript" src="scripts/data/program-units/velocity-evaluation-long-jump.js"></script>
+<script type="text/javascript" src="scripts/data/program-units/warm-up-arm-care-monday.js"></script>
+<script type="text/javascript" src="scripts/data/program-units/warm-up-arm-care-tuesday.js"></script>
+<script type="text/javascript" src="scripts/data/program-units/warm-up-arm-care-wednesday.js"></script>
+<script type="text/javascript" src="scripts/data/program-units/warm-up-arm-care-thursday.js"></script>
+<script type="text/javascript" src="scripts/data/program-units/warm-up-arm-care-friday.js"></script>
+<script type="text/javascript" src="scripts/data/program-units/warm-up-arm-care-saturday.js"></script>
+<script type="text/javascript" src="scripts/data/program-units/warm-up-arm-care-sunday.js"></script>
+<!-- Modules-->
+<script type="text/javascript" src="scripts/modules/AssessmentScreenModule.js"></script>
+<script type="text/javascript" src="scripts/modules/CountdownTimerModule.js"></script>
+<script type="text/javascript" src="scripts/modules/NotificationModule.js"></script>
+<script type="text/javascript" src="scripts/modules/StopwatchTimerModule.js"></script>
+<script type="text/javascript" src="scripts/modules/ExerciseScreenModule.js"></script>
+<script type="text/javascript" src="scripts/modules/InfoScreenModule.js"></script>
+<script type="text/javascript" src="scripts/modules/PitchTrackerModule.js"></script>
+<script type="text/javascript" src="scripts/modules/QuestionScreenModule.js"></script>
+<script type="text/javascript" src="scripts/modules/StrengthWorkoutScreenModule.js"></script>
+<script type="text/javascript" src="scripts/modules/VelocityWorkoutScreenModule.js"></script>
+<!-- App -->
+<script type="text/javascript" src="scripts/app/t7-helpers-general.js"></script>
+<script type="text/javascript" src="scripts/app/t7-helpers-home-screen.js"></script>
+<script type="text/javascript" src="scripts/app/t7-helpers-workouts.js"></script>
+<script type="text/javascript" src="scripts/app/programs.js"></script>
+<script type="text/javascript" src="scripts/app/ChangeScheduleMode.js"></script>
+<script type="text/javascript" src="scripts/app/AccountSetupAccount.js"></script>
+<script type="text/javascript" src="scripts/app/AccountMobileNumber.js"></script>
+<script type="text/javascript" src="scripts/app/AccountChangePassword.js"></script>
+<script type="text/javascript" src="scripts/app/AccountProfile.js"></script>
+<script type="text/javascript" src="scripts/app/AccountEquipment.js"></script>
+<script type="text/javascript" src="scripts/app/AccountSettings.js"></script>
+<script type="text/javascript" src="scripts/app/AccountScheduling.js"></script>
+<script type="text/javascript" src="scripts/app/ProgramUnitScreens.js"></script>
+<script type="text/javascript" src="scripts/app/ProgramUnitCompletion.js"></script>
+<script type="text/javascript" src="scripts/app/observer.js"></script>
+<script type="text/javascript" src="scripts/app/events.js"></script>
+<script type="text/javascript" src="scripts/app/core.js"></script>
+<script type="text/javascript" src="scripts/app/initialisation.js"></script>
+<!-- env.js is not needed, and indeed should not be included, for the build -->
+<script type="text/javascript" src="scripts/env.js"></script>
+<script type="text/javascript" src="scripts/app.js"></script>
+<!---END HERE--->
+</body>
+</html>
