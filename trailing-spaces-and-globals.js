@@ -1,3 +1,4 @@
+/* global getWeekDay */
 
 'use strict';
 
@@ -46,23 +47,23 @@ var NotificationModule = (function () {
             var testingKeySpaces = {
                 keyOne:   'asdfasdfadf',
                 keyTwo:   'asdfasdfasdf',
-                keyThree: 'asdfadsf',
+                keyThree: 'asdfadsf'
             };
             console.log(testingKeySpaces.asdf);
 
             testingKeySpaces = null;
 
             return {
-                id:      weekday,
-                text:    'Please, remember to complete your workout today.',
-                title:   'ThrowSmart',
-                trigger: {
+                id:         weekday,
+                foreground: true,
+                text:       'Please, remember to complete your workout today.',
+                title:      'ThrowSmart',
+                trigger:    {
                     every: {
                         hour:    10,
-                        weekday: weekday,
+                        weekday: weekday
                     }
-                },
-                foreground: true,
+                }
             };
         });
 
@@ -71,6 +72,8 @@ var NotificationModule = (function () {
 
     function browserGetRequestPermission() {
         scheduleNotification(getScheduleOption());
+
+        return;
     }
 
     function getScheduleOption() {
@@ -104,7 +107,7 @@ var NotificationModule = (function () {
     }
 
     return {
-        setNotification: setNotification,
+        setNotification: setNotification
     };
 
 })();
