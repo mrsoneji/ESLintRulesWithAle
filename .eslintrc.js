@@ -39,7 +39,12 @@ module.exports = {
                 'functions': 'ignore'
             }
         ],
-		'no-unused-vars': ['error', { 'vars': 'local', 'args': 'after-used', 'ignoreRestSiblings': false }],
+		'no-unused-vars': ['error', { 
+            'vars': 'all', 
+            'args': 'after-used', 
+            'ignoreRestSiblings': false, 
+            'varsIgnorePattern': '[a-z]Module' 
+        }],
 		'indent': [
 			'error',
 			4,
