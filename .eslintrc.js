@@ -8,8 +8,7 @@ module.exports = {
 	'globals': {
 		'Atomics': 'readonly',
 		'SharedArrayBuffer': 'readonly',
-        'NotificationModule': 'off',
-        'cordova': 'readonly'
+        'NotificationModule': 'off'
 	},
 	'parserOptions': {
 		'ecmaVersion': 5
@@ -37,5 +36,8 @@ module.exports = {
 			'error',
 			'always'
 		]
-	}
+    },
+    'plugins': [
+        'html'
+    ]
 };
