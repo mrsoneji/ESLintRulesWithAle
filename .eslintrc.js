@@ -27,7 +27,8 @@ module.exports = {
         ],
         'padding-line-between-statements': [
             'error',
-            { 'blankLine': 'always', 'prev': 'function', 'next': 'function' }
+            { 'blankLine': 'always', 'prev': 'function', 'next': 'function' },
+            { 'blankLine': 'always', 'prev': '*', 'next': 'return' }
         ],
 		'no-unused-vars': ['error', { 'vars': 'local', 'args': 'after-used', 'ignoreRestSiblings': false }],
 		'indent': [
