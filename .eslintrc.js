@@ -45,7 +45,19 @@ module.exports = {
         ],
         'eol-last': [
             "error", "always"
-        ]
+        ],
+        'key-spacing': ['error', {
+            'multiLine': {
+                'beforeColon': false,
+                'afterColon': true
+            },
+            'align': {
+                'beforeColon': false,
+                'afterColon': true,
+                'on': 'value',
+                'mode': 'strict'
+            }
+        }]
     },
     'plugins': [
         'html'

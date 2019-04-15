@@ -3,7 +3,7 @@
 
 var app = app || {};
 
-var NotificationModule = (function() {
+var NotificationModule = (function () {
 
     var debug = false;
 
@@ -40,8 +40,17 @@ var NotificationModule = (function() {
     function scheduleNotification(workoutScheduleOption) {
         var localNotification = cordova.plugins.notification.local;
 
-        var config = workoutScheduleOption.split('-').map(function(day) {
+        var config = workoutScheduleOption.split('-').map(function (day) {
             var weekday = getWeekDay(day);
+
+            var testingKeySpaces = {
+                keyOne:   'asdfasdfadf',
+                keyTwo:   'asdfasdfasdf',
+                keyThree: 'asdfadsf',
+            };
+            console.log(testingKeySpaces.asdf);
+
+            testingKeySpaces = null;
 
             return {
                 id: weekday,
@@ -49,8 +58,8 @@ var NotificationModule = (function() {
                 title: 'ThrowSmart',
                 trigger: {
                     every: {
-                        hour: 10,
-                        weekday: weekday,
+                        hour :        10,
+                        weekday :            weekday,
                     }
                 },
                 foreground: true,
