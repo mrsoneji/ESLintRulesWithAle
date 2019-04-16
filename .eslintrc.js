@@ -38,11 +38,11 @@ module.exports = {
                 'functions': 'ignore'
             }
         ],
-		'no-unused-vars': ['error', { 
-            'vars': 'all', 
-            'args': 'after-used', 
-            'ignoreRestSiblings': false, 
-            'varsIgnorePattern': '[a-z]Module' 
+		'no-unused-vars': ['error', {
+            'vars': 'all',
+            'args': 'after-used',
+            'ignoreRestSiblings': false,
+            'varsIgnorePattern': '[a-z]Module'
         }],
 		'indent': [
 			'error',
@@ -70,12 +70,16 @@ module.exports = {
                 'afterColon': true
             },
             'align': {
-                'beforeColon': false,
-                'afterColon': true,
                 'on': 'value',
                 'mode': 'strict'
             }
-        }]
+        }],
+        'curly': 'error',
+        'no-multi-spaces': ['error', {'exceptions': { 'VariableDeclarator': true, 'AssignmentExpression':true}}],
+        'array-bracket-spacing': ['error','never'],
+        'array-bracket-newline': ['error', {'multiline':true}],
+        'object-curly-spacing': ['error','never'],
+        'comma-spacing': ['error', {'before':false,'after':true}]
     },
     'plugins': [
         'html'
